@@ -6,6 +6,7 @@ ThemeData getApplicationThemeData() {
     primaryColorLight: HexColor.fromHex("#B3ED9728"),
     primaryColorDark: HexColor.fromHex("#d17d11"),
     disabledColor: HexColor.fromHex("#707070"),
+    fontFamily: 'Open Sans',
     buttonTheme: ButtonThemeData(
       shape: const StadiumBorder(),
       disabledColor: HexColor.fromHex("#707070"),
