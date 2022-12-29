@@ -1,9 +1,9 @@
-import 'package:batch_student_starter/app/theme.dart';
-import 'package:batch_student_starter/screen/dashboard.dart';
 import 'package:flutter/material.dart';
 
 import '../screen/login.dart';
 import '../screen/register.dart';
+import '../screen/dashboard.dart';
+import '../app/theme.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

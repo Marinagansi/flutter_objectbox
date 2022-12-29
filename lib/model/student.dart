@@ -1,4 +1,6 @@
+import 'package:batch_student_starter/model/batch.dart';
 import 'package:objectbox/objectbox.dart';
+
 
 @Entity()
 class Student {
@@ -9,6 +11,7 @@ class Student {
   String username;
   String password;
 
+  final batch = ToOne<Batch>();
   Student(this.fname, this.lname, this.username, this.password,
       {this.stdId = 0});
 }
