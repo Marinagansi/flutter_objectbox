@@ -17,7 +17,7 @@ class StudentDatasource {
     }
   }
 
-  Future<List<Student>>getStudent() async {
+  Future<List<Student>> getStudent() async {
     try {
       return objectBoxInstance.getAllStudent();
     } catch (e) {
@@ -27,5 +27,13 @@ class StudentDatasource {
     }
   }
 
-   
+  Future<Student?> loginStudent(username, password) {
+    try {
+      return Future.value(objectBoxInstance.loginStudent(username, password));
+    } catch (e) {
+      return Future.value(null);
+      //or
+      //return 0;
+    }
+  }
 }
